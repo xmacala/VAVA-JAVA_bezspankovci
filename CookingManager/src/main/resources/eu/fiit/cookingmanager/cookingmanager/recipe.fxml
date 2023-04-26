@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.fiit.cookingmanager.cookingmanager.controller.RecipeController">
+   <children>
+      <Label layoutX="23.0" layoutY="71.0" text="%recipe_name_choose">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="107.0" text="%recipe_type">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="145.0" text="%recipe_time">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="709.0" layoutY="71.0" text="%ingredients">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="180.0" text="%steps">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_recipeName" layoutX="313.0" layoutY="75.0" />
+      <TextField fx:id="txt_recipeType" layoutX="313.0" layoutY="111.0" />
+      <TextField fx:id="txt_recipeTime" layoutX="313.0" layoutY="146.0" />
+      <TextArea fx:id="txt_steps" layoutX="315.0" layoutY="194.0" prefHeight="491.0" prefWidth="394.0" />
+      <VBox fx:id="ingredients_v" layoutX="838.0" layoutY="75.0" prefHeight="611.0" prefWidth="273.0" />
+      <Button fx:id="btn_save" layoutX="1205.0" layoutY="674.0" mnemonicParsing="false" stylesheets="@../../../../css/style.css" text="%save" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="20.0" />
+      <Button fx:id="btn_createList" layoutX="25.0" layoutY="673.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="273.0" stylesheets="@../../../../css/style.css" text="%create_shopping_list" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0" />
+      <ButtonBar prefHeight="54.0" prefWidth="1280.0" style="-fx-background-color: rgb(255, 115, 0);">
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+         <buttons>
+            <Button fx:id="btn_back" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../../../../css/style.css" text="%back" />
+            <Button fx:id="btn_logout" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../../../../css/style.css" text="%logout" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

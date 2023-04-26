@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.fiit.cookingmanager.cookingmanager.controller.AddRecipeController">
+   <children>
+      <TextField fx:id="inputName" layoutX="128.0" layoutY="58.0" promptText="%recipe_name_choose" />
+      <ChoiceBox fx:id="choiceType" layoutX="128.0" layoutY="94.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="61.0" text="%recipe_name">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="97.0" text="%recipe_type">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="654.0" layoutY="61.0" text="%ingredients">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_adding" layoutX="773.0" layoutY="59.0" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../../../../css/style.css" text="%add_ingredient" />
+      <TextArea fx:id="inputSteps" layoutX="126.0" layoutY="186.0" prefHeight="465.0" prefWidth="458.0" />
+      <Label layoutX="14.0" layoutY="176.0" text="%steps">
+
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="135.0" text="%recipe_time">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputTime" layoutX="127.0" layoutY="132.0" prefHeight="26.0" prefWidth="59.0" promptText="%minutes" />
+
+      <Button fx:id="btn_exampleFile" layoutX="128.0" layoutY="672.0" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../../../../css/style.css" text="%pregenerate_xml" />
+      <Button fx:id="btn_recipe" layoutX="1216.0" layoutY="685.0" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../../../../css/style.css" text="%save" AnchorPane.rightAnchor="20.0" />
+      <Button fx:id="btn_discard" layoutX="1145.0" layoutY="685.0" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../../../../css/style.css" text="%discard" AnchorPane.rightAnchor="100.0" />
+      <Button fx:id="btn_xmlFile" layoutX="270.0" layoutY="672.0" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../../../../css/style.css" text="%choose_xml_file" />
+      <Label layoutX="14.0" layoutY="677.0" text="%XMLfile">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_xmlFile" layoutX="409.0" layoutY="678.0" prefHeight="17.0" prefWidth="175.0" />
+      <ButtonBar prefHeight="54.0" prefWidth="1280.0" style="-fx-background-color: rgb(255, 115, 0);">
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+         <buttons>
+            <Button fx:id="btn_back_home" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../../../../css/style.css" text="%back" />
+      
+            <Button fx:id="btn_logout" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../../../../css/style.css" text="%logout" />
+         </buttons>
+      </ButtonBar>
+      <ScrollPane fitToWidth="true" layoutX="773.0" layoutY="107.0" prefHeight="555.0" prefWidth="383.0" vbarPolicy="AS_NEEDED">
+         <content>
+            <VBox fx:id="vbox_ingredients" prefHeight="552.0" prefWidth="246.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<recipe>
+    <name>Write name of the recipe here</name>
+    <type>Write type of food here</type>
+    <time>Write time to prepare here</time>
+    <ingredients>
+        <ingredient>
+            <ing_name>Write name of 1st ingredient here</ing_name>
+            <ing_amount>Write amount of 1st ingredient here</ing_amount>
+        </ingredient>
+        <ingredient>
+            <ing_name>Write name of 2nd ingredient here</ing_name>
+            <ing_amount>Write amount of 2nd ingredient here</ing_amount>
+        </ingredient>
+        <ingredient>
+            You can append more ingredient after coppying this element
+            <ing_name/>
+            <ing_amount/>
+        </ingredient>
+    </ingredients>
+    <steps>Add some inportant info and process HERE</steps>
+</recipe>

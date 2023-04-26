@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<shopping-list>
+    <list-item>
+        <prod>Salt</prod>
+        <pieces>50</pieces>
+        <unit>g</unit>
+    </list-item>
+    <list-item>
+        <prod>Pepper</prod>
+        <pieces>100</pieces>
+        <unit>g</unit>
+    </list-item>
+</shopping-list>
